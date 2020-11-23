@@ -156,7 +156,7 @@ list.remove(값)   #특정 값 원소 제거, 여러 개면 하나만 제거
 - sort 시간복잡도 O(NlogN)
 - 그외 시간복잡도 O(N)
 
-## 문자열
+## [문자열](#Contents)
 
 ### 문자열 연산
 
@@ -278,7 +278,7 @@ data.update([5,6])
 data.remove(3)
 ```
 
-# 입출력
+# [입출력](#Contents)
 
 ## Input
 
@@ -332,7 +332,7 @@ print("%d %d"%(a,b))
 
 - 정수는 print안에 + 사용불가능! 무조건 format 사용해야됨
 
-# 조건문
+# [조건문](#Contents)
 
 ## 기본 조건문 사용방법
 
@@ -372,7 +372,7 @@ score = 85
 result = "Success" if score >=80 else "Fail"
 ```
 
-# 반복문
+# [반복문](#Contents)
 
 ## while
 
