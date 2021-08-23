@@ -137,7 +137,7 @@ def heapsort(iterable):
 result = heapsort([1,3,5,7,9,2,4,6,8,0])
 ```
 
-# bisect
+# [bisect](#contents)
 - 이진 탐색을 위한 라이브러리
 - 정렬된 배열에서 특정 원소를 찾을 때 사용
 - 두 함수 모두 시간 복잡도는 ```O(logN)```
