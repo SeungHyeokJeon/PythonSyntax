@@ -350,6 +350,26 @@ print("%d %d"%(a,b))
 
 - 정수는 print안에 + 사용불가능! 무조건 format 사용해야됨
 
+### 줄바꿈 커스텀 하기
+
+```python
+# 끝 문자 변경
+print(1,2,3, end=' ')
+> 1 2 3
+
+# 구분자 변경
+print(1,2,3, sep='wow')
+> 1wow2wow3
+```
+
+- 덤으로 문자*정수 하면 정수만큼 문자가 반복되어 입력된다
+```python
+a = 'hello'
+print(a*5)
+
+> hellohellohellohellohello
+```
+
 # [조건문](#Contents)
 
 ## 기본 조건문 사용방법
