@@ -321,7 +321,7 @@ a = sys.stdin.readline().rstrip()
 ### 정수 또는 실수형으로 강제 입력받기
 
 ```python
-x=int(input())      #정수
+x=int(input(),10)      #정수
 x=float(input())    #실수
 ```
 
