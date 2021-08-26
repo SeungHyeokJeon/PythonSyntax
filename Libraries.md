@@ -219,6 +219,10 @@ print(math.sqrt(7))
 # 최대 공약수
 print(math.gcd(21,14))
 
+# 최소 공배수
+def lcm(x, y):
+    return x * y // math.gcd(x,y)
+
 # 자연상수 e, pi
 print(math.pi)
 print(math.e)
