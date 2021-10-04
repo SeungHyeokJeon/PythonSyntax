@@ -11,16 +11,18 @@
         - [인접 행렬](#인접-행렬)
 
         - [인접 리스트](#인접-리스트)
-
 2. [알고리즘](#알고리즘)
 
     1. [DFS](#DFS)
 
         - [붙어있는 영역 개수 세기](#붙어있는-영역-개수-세기)
-        
     2. [BFS](#BFS)
-
-        - [최단 경로 찾기](#최단-경로-찾기)
+    - [최단 경로 찾기](#최단-경로-찾기)
+    3. [이진탐색](#이진탐색)
+        - [재귀적으로 구현](#재귀적으로-구현)
+        - [반복적으로 구현](#반복적으로-구현)
+3. [Dyanmic Programming](#Dyanmic Programming)
+    1. [Memoization 기법](#[Memoization-기법])
 
 
 # [자료구조](#Contents)
@@ -256,3 +258,77 @@ graph=[
 
 print(bfs(0,0))
 ```
+
+## [이진탐색](#Contents)
+
+- 배열 내부 데이터가 정렬되어 있어야만 사용 가능
+
+### [재귀적으로 구현](#Content)
+
+```python
+def binary_search(array, target, start, end):
+    if start > end:
+        return
+    
+    mid = (start+end)//2 # 중간점
+    
+    if array[mid]==target:
+        return array[mid]
+    
+    # 중간점 보다 작을 경우 end 값을 중간점으로
+    elif array[mid]>target:
+        return binary_search(array, target, start, mid-1)
+    
+    # 중간점 보다 클 경우 start 값을 중간점으로
+    else:
+        return binary_search(array, target, mid+1, end)
+```
+
+### [반복적으로 구현](#Content)
+
+```python
+def binary_search(array, target, start, end):
+    while start<=end:
+        mid = (start+end)//2 # 중간점
+
+        if array[mid]==target:
+            return array[mid]
+        
+        # 중간점 보다 작을 경우 end 값을 중간점으로
+        elif array[mid]>target:
+            end = mid-1
+        # 중간점 보다 클 경우 start 값을 중간점으로
+        else:
+            start = mid+1
+            
+    return
+```
+
+# [Dyanmic Programming](#Contents)
+
+## [Memoization 기법](#Contents)
+
+- 피보나치 예제
+
+```python
+n=99
+# Memoization하기 위한 List 정의
+d = [0]*(n+1)
+
+def fibo(x):
+    # 종료 조건
+    if x==1 or x==2:
+        return 1
+    
+    # 이미 계산한 값이라면
+    if d[x]!=0:
+        # 계산한 값 그대로 반환
+        return d[x]
+    
+    # 계산 안한 값이라면
+    d[x] = fibo(x-1)+fibo(x-2)
+    return d[x]
+
+print(fibo(n))
+```
+
