@@ -17,7 +17,7 @@
 
         - [붙어있는 영역 개수 세기](#붙어있는-영역-개수-세기)
     2. [BFS](#BFS)
-    - [최단 경로 찾기](#최단-경로-찾기)
+        - [최단 경로 찾기](#최단-경로-찾기)
     3. [이진탐색](#이진탐색)
         - [재귀적으로 구현](#재귀적으로-구현)
         - [반복적으로 구현](#반복적으로-구현)
@@ -124,7 +124,7 @@ visited = [False]*9
 dfs(graph,1,visited)
 ```
 
-### [붙어있는 영역 개수 세기](#Contents)
+### 붙어있는 영역 개수 세기
 
 ```python
 def dfs(x,y):
@@ -210,7 +210,7 @@ visited = [False]*9
 bfs(graph,1,visited)
 ```
 
-### [최단 경로 찾기](#Contents)
+### 최단 경로 찾기
 
 ```python
 from collections import deque
@@ -263,7 +263,7 @@ print(bfs(0,0))
 
 - 배열 내부 데이터가 정렬되어 있어야만 사용 가능
 
-### [재귀적으로 구현](#Content)
+### 재귀적으로 구현
 
 ```python
 def binary_search(array, target, start, end):
@@ -284,7 +284,7 @@ def binary_search(array, target, start, end):
         return binary_search(array, target, mid+1, end)
 ```
 
-### [반복적으로 구현](#Content)
+### 반복적으로 구현
 
 ```python
 def binary_search(array, target, start, end):
