@@ -21,7 +21,7 @@
     3. [이진탐색](#이진탐색)
         - [재귀적으로 구현](#재귀적으로-구현)
         - [반복적으로 구현](#반복적으로-구현)
-3. [Dyanmic Programming](#Dyanmic Programming)
+3. [Dynamic Programming](#Dynamic-Programming)
     1. [Memoization 기법](#[Memoization-기법])
 
 
@@ -304,7 +304,7 @@ def binary_search(array, target, start, end):
     return
 ```
 
-# [Dyanmic Programming](#Contents)
+# [Dynamic Programming](#Contents)
 
 ## [Memoization 기법](#Contents)
 
