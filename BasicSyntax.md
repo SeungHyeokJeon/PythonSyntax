@@ -168,6 +168,10 @@ list.sort()     #원소 오름차순으로 정렬
 list.reverse()  #순서 반전
 list.count(값)    #특정 값 데이터 개수
 list.remove(값)   #특정 값 원소 제거, 여러 개면 하나만 제거
+
+# 특정 값의 모든 index 저장
+index_list = list(filter(lambda x: test_list[x] == 3, range(len(test_list))))
+
 ```
 
 - append 시간복잡도 O(1)
