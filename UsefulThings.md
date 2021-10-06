@@ -11,18 +11,28 @@
         - [인접 행렬](#인접-행렬)
 
         - [인접 리스트](#인접-리스트)
+
 2. [알고리즘](#알고리즘)
 
     1. [DFS](#DFS)
 
         - [붙어있는 영역 개수 세기](#붙어있는-영역-개수-세기)
+
     2. [BFS](#BFS)
+
         - [최단 경로 찾기](#최단-경로-찾기)
+
     3. [이진탐색](#이진탐색)
+
         - [재귀적으로 구현](#재귀적으로-구현)
+
         - [반복적으로 구현](#반복적으로-구현)
+
+    4. [소수 찾기](#소수-찾기)
+
 3. [Dynamic Programming](#Dynamic-Programming)
-    1. [Memoization 기법](#[Memoization-기법])
+
+    1. [Memoization 기법](#Memoization-기법)
 
 
 # [자료구조](#Contents)
@@ -302,6 +312,24 @@ def binary_search(array, target, start, end):
             start = mid+1
             
     return
+```
+
+## [소수 찾기](#Contents)
+
+- 에라토스테네스의 체
+```python
+def get_prime(n):
+    a = [0,0]+[1]*(n-1)
+    result = []
+    
+    for i in range(2,n+1):
+        if a[i]:
+            result.append(a[i])
+        
+        for j in range(i,n+1,i):
+            a[j]=0
+    
+    return result
 ```
 
 # [Dynamic Programming](#Contents)
