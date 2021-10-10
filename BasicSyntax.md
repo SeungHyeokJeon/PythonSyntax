@@ -213,6 +213,17 @@ print(a)
 rewq
 ```
 
+### 리스트에서 문자열 합치기
+
+```python
+a = ['hello','world']
+b = ''
+print('_'.join(a))
+
+hello_world
+```
+
+
 ## 튜플 자료형
 
 - 리스트와 달리 한 번 선언된 값을 변경할 수 없다.
