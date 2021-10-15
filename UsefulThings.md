@@ -28,7 +28,9 @@
 
         - [반복적으로 구현](#반복적으로-구현)
 
-    4. [소수 찾기](#소수-찾기)
+    4. [소수 판별](#소수-판별)
+
+    4. [어떤 수 보다 작은 소수 찾기](#어떤-수-보다-작은-소수-찾기)
 
 3. [Dynamic Programming](#Dynamic-Programming)
 
@@ -320,7 +322,16 @@ def binary_search(array, target, start, end):
     return
 ```
 
-## [소수 찾기](#Contents)
+## [소수 판별](#Contents)
+```python
+def is_prime(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+```
+
+## [어떤 수 보다 작은 소수 찾기](#Contents)
 
 - 에라토스테네스의 체
 ```python
